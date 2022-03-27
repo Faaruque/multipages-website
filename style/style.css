@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+/* default css start here  */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #ddd;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+a:hover {
+  color: #ffc107;
+}
+section {
+  padding: 5rem 0;
+}
+/* default css end here  */
+
+/* bottom to top scroll button css here  */
+.scroll-up-btn {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  background: #6f42c1;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  z-index: 9999;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
+}
+
+/* ======================================================================
+  Home page css start
+========================================================================== */
+
+/* header-aria css-start here */
+#header {
+  background: #6f42c1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.sticky {
+  background: #6f42c1;
+}
+#header .logo a {
+  font-size: 2rem;
+  color: #fff;
+}
+.nav-list-wapper {
+  justify-content: end;
+}
+.nav-list li a {
+  color: #fff !important;
+}
+.nav-list li a:hover {
+  color: #ffc107 !important;
+}
+/* header-aria css-end here */
+
+/* hero-aria css-start here */
+#hero-aria {
+  background: #6f42c1;
+}
+.hero-aria-img img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-btn {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 2rem 0;
+  padding: 12px 22px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.hero-btn:hover {
+  background: #ffc107;
+}
+.hero-btn a {
+  color: #ddd;
+  text-decoration: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+/* hero-aria css-end here */
+
+/* gelary-aria css-start here */
+.gelary-wapper {
+  flex-direction: row;
+}
+.gelary-content-box {
+  padding: 1rem;
+  overflow: hidden;
+}
+.gelary-content-box img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+.gelary-content-box:hover img {
+  transform: scale(1.1);
+}
+/* gelary-aria css-end here */
+
+/* address-aria css-start here */
+#Address {
+  background: #fff;
+}
+.address-wapper {
+  z-index: 999;
+}
+.address-link,
+.phone,
+.email {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: 0.5s ease;
+}
+.address-link:hover {
+  background: #6f42c1;
+}
+.phone:hover {
+  background: #6f42c1;
+}
+.email:hover {
+  background: #6f42c1;
+}
+.address-link i,
+.phone i,
+.email i {
+  display: block;
+  color: #6f42c1;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: 0.5s ease;
+}
+.address-link:hover i {
+  color: #fff;
+}
+.phone:hover i {
+  color: #fff;
+}
+.email:hover i {
+  color: #fff;
+}
+
+.address-link p,
+.phone p,
+.email p {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem !important;
+}
+.address-link span,
+.phone span,
+.email span {
+  font-size: 12px;
+}
+/* address-aria css-start here */
+
+/* footer-aria css-start here */
+#Footer {
+  background: #6f42c1;
+}
+.footer-wapper {
+  margin-top: 0.7rem;
+  display: flex;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+}
+.footer-icon i {
+  font-size: 1.1rem;
+  color: #ffc107;
+  margin-right: 0.7rem;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+.footer-content a {
+  color: #fff;
+  line-height: 1.6rem;
+  transition: 0.5s ease;
+}
+.footer-content a:hover {
+  color: #ffc107;
+}
+.footer-left p {
+  padding: 1.5rem;
+  color: #ddd;
+}
+.copy {
+  font-size: 1rem;
+}
+.copy span {
+  font-size: 1.2rem;
+}
+.copy a {
+  transition: 0.5s ease;
+  font-size: 1.1rem;
+  color: #222;
+}
+.copy a:hover {
+  color: #ffc107 !important;
+}
+/* footer-aria css-end here */
+
+/* ======================================================================
+  about page css start
+========================================================================== */
+
+/* about-section css-start here  */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-content p {
+  text-align: center;
+  max-width: 400px;
+}
+.about-img {
+  width: 180px;
+  height: 165px;
+  background: #fff;
+  background-position: center center;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 999;
+  border: 1px solid #fff;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+}
+/* about-section css-end here  */
+
+/* about-me-section css-start here  */
+#about-me h1 {
+  color: #ddd;
+}
+about-me-image img {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-text {
+  color: #ddd;
+  text-align: start;
+}
+/* about-section css-end here  */
+
+/* ======================================================================
+  service page css start
+========================================================================== */
+
+/* service-hero-section css-start here  */
+#service {
+  background: linear-gradient(#0c0b0a9f, #6f42c1a6),
+    url(https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_960_720.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.service-wapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-wapper h2 {
+  text-align: center;
+  color: #ddd;
+}
+.service-wapper p {
+  text-align: center;
+  color: #ddd;
+}
+.service-hero-btn {
+  margin: auto;
+  padding: 0.7rem 1.5rem;
+  border: 0.5px solid #ffc107;
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: 0.8s ease;
+}
+.service-hero-btn a {
+  color: #ddd;
+  text-decoration: none;
+}
+.service-hero-btn:hover {
+  background: #ffc107;
+}
+/* service-hero-section css-start here  */
+
+/* book-section css-start here  */
+#book {
+  background: #222;
+}
+.book-content {
+  height: 250px;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.book-content img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.8s ease;
+}
+.book-content:hover img {
+  transform: scale(1.1);
+}
+/* book-section css-end here  */
+
+/* ======================================================================
+  contact page css start
+========================================================================== */
+/* contact-section css-start here  */
+#contact {
+  background: linear-gradient(#6f42c1a6, #6f42c185),
+    url(../images/contact-us-1.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contact-wapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-wapper h2 {
+  font-size: 2.5rem;
+}
+/* contact-section css-end here  */
+
+/* contact-us-section css start here */
+.contact-us-form {
+  border-left: 0.5px solid #22222252;
+}
+.contact-us-image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.8s ease;
+}
+.contact-us-single-box span i {
+  color: #6f42c1;
+}
+.contact-us-btn {
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #6f42c1;
+  color: #ddd;
+  transition: 0.5s ease;
+}
+.contact-us-btn:hover {
+  background: #ffc107;
+  color: #333;
+}
+/* contact-us-section css end here */
